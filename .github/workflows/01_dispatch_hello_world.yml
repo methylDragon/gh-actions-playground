@@ -1,0 +1,11 @@
+name: "Dispatch Hello World"
+
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch
+on: workflow_dispatch
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Hello World!"
